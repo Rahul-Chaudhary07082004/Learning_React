@@ -1,0 +1,18 @@
+1. Virtual Dom :- Its lightweight, in-memory representation of the real browser DOM. Its just plain js object that describe what the UI should look like.
+Manipulating the real DOM is slow. React avoids unnecessary DOM work by:
+Creating a Virtual DOM tree
+Updating that tree when state/props change
+Comparing it with the previous tree
+Updating only the parts of the real DOM that actually changed
+
+2. Reconciliation :- the process that react uses to compare the old virtual dom with the new one and decide what changed. 
+This comparison is often called diffing.
+Reconciliaton produce a list of updates (called effects) that will be later be applied to the real DOM.
+
+3. Fibre :- Its react internal rendering engine.
+not the virtual dom , its a system that control how and when reconciliation work happens.
+
+ONE LINE SUMMARY 
+1. virtual dom :- what the ui looks like 
+2. reconciliation :- finding what changed 
+3. fibre:- scheduling and controlling the work efficienlty
